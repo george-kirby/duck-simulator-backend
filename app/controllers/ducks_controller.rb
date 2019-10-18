@@ -32,7 +32,7 @@ class DucksController < ApplicationController
 
     def serialize(duck_data)
         duck_data.to_json(:include => {
-            :area => {:only => [:name, :id]},
+            :area => {:only => [:name, :id, :image_url]},
             :user => {:only => [:username]}
         }, :except => [:user_id, :area_id, :created_at, :updated_at])
     end
