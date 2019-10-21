@@ -27,7 +27,7 @@ class DucksController < ApplicationController
     private
 
     def duck_params
-        params.require(:duck).permit(:name, :gender, :alive, :awake, :hunger, :mood, :image_url, :user_id, :area_id)
+        params.require(:duck).permit(:name, :gender, :alive, :awake, :hunger, :mood, :image_url, :color, :user_id, :area_id)
     end
 
     def serialize(duck_data)
