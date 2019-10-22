@@ -15,6 +15,7 @@ aude = User.create(username: "aude")
 
 flatiron_pond = Area.create(name: "Flatiron Pond", max_capacity: 10, image_url: "flatiron-pond.png")
 green_park_pond = Area.create(name: "Green Park Pond", max_capacity: 5, image_url: "green-park.jpg")
+hell_pond = Area.create(name: "Hell Pond", max_capacity: 5, image_url: "hell-pond.jpg")
 
 joaquin = Duck.create(name: "Joaquin", gender: "male", user: geok, area: flatiron_pond, color:'blue')
 erin = Duck.create(name: "Erin", gender: "female", user: aude, area: green_park_pond, color: 'yellow')

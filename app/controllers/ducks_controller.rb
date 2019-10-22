@@ -14,6 +14,7 @@ class DucksController < ApplicationController
     end
 
     def create
+        byebug
         duck = Duck.create(duck_params)
         render json: serialize(duck)
     end
