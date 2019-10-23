@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_10_16_135545) do
     t.integer "hunger", default: 0
     t.string "mood", default: "happy"
     t.string "image_url"
+    t.string "color"
     t.bigint "user_id", null: false
     t.bigint "area_id", null: false
     t.datetime "created_at", precision: 6, null: false
