@@ -1,10 +1,6 @@
 class DucksController < ApplicationController
     def index
         ducks = Duck.all
-        # render json: ducks.to_json(:include => {
-        #     :area => {:only => [:name]},
-        #     :user => {:only => [:username]}
-        # }, :except => [:user_id, :area_id, :created_at, :updated_at])
         render json: serialize(ducks)
     end
 
@@ -14,7 +10,6 @@ class DucksController < ApplicationController
     end
 
     def create
-        byebug
         duck = Duck.create(duck_params)
         render json: serialize(duck)
     end
